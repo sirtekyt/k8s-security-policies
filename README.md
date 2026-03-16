@@ -119,3 +119,16 @@ FAIL - deployment.yaml - Deployments are not allowed
 
 2 tests, 0 passed, 0 warnings, 2 failure
 ```
+
+## Automatyczna konwersja polityk REGO do Gatekeeper
+
+Aby wygenerować manifesty Gatekeeper (ConstraintTemplate i Constraint) na podstawie wszystkich plików REGO w katalogu `policies`, uruchom:
+
+```bash
+python3 policies/rego2gatekeeper.py policies
+```
+
+Wygenerowane pliki znajdziesz w katalogu `converted-policies` na tym samym poziomie co katalog `policies`.
+
+### 2 wersja Automatyczne generowanie polityk dla gatekeepera
+./konstraint create . --output converted-policies

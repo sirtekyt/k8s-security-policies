@@ -1,0 +1,4 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K-sec-14
+metadata:
+  name: k-sec-14

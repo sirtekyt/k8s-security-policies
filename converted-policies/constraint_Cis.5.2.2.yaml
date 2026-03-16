@@ -1,0 +1,4 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: Cis-5-2-2
+metadata:
+  name: cis-5-2-2
